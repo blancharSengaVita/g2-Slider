@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Produweb_Slider::home" title="Slider" module="Produweb_Slider" sortOrder="51" resource="Magento_Backend::content" action="produweb_slider/index/index" />
+        <add id="Produweb_Slider::post" title="Manage Posts" module="Produweb_Slider" action="mageplaza_home/post" resource="Produweb_Slider::post" parent="Produweb_Slider::home"/>
+        <add id="Produweb_Slider::hello_configuration" title="Configuration" module="Produweb_Slider" sortOrder="99" parent="Produweb_Slider::home" action="adminhtml/system_config/edit/section/home" resource="Produweb_Slider::home_configuration"/>
+    </menu>
+</config>
